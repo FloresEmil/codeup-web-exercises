@@ -51,4 +51,6 @@ let offer = confirm("Has the offer expired")
 
 alert("You can have the product's offer! " + (premium && offer) || (items || offer) )
 
+alert("hi")
+
 
