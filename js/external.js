@@ -35,5 +35,20 @@ alert("Your weekly earnings are $" + (google * googletime + amazon * amazontime+
 
 //Student enrollment
 
+let isclassfull = confirm("Is the class not full?");
+
+let schedule = confirm("Do you have time for class?");
+
+alert("you can enroll: " + (isclassfull && schedule))
+
+//Promotion for product
+
+let premium = confirm("Are you a premium member?")
+
+let items = confirm("Are you buying more than two items?")
+
+let offer = confirm("Has the offer expired")
+
+alert("You can have the product's offer! " + (premium && offer) + (items || offer) )
 
 
