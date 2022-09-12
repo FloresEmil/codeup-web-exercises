@@ -1,6 +1,6 @@
 "use strict";
 
-console.log(`hello from inline JavaScript`)
+console.log(`hello from exeternal.js JavaScript`)
 
 alert(" Welcome to my Website!")
 
@@ -49,8 +49,7 @@ let items = confirm("Are you buying more than two items?")
 
 let offer = confirm("Has the offer expired")
 
-alert("You can have the product's offer! " + (premium && offer) || (items || offer) )
+let offerApplied = (items || premium) && !offer;
 
-alert("hi")
-
+alert("Can the offer be applied?" + offerApplied)
 
