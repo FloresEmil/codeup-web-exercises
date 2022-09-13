@@ -21,34 +21,66 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-function analyseColor(input){
+/**function analyseColor(input){
 	if (input === "green") {
 		return ("Green is the color of life");
-	} else if (input === "pink") {
-		return "Pink is a nice color"
+	} else if (input === "yellow") {
+		return "Yellow is a nice color"
 	} else {
 		return "I don't know that color"
 	}
 }
- console.log(analyseColor("green"))
+ console.log(analyseColor("yellow"))
+ */
 
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+let color = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+let randomColor = color[Math.floor(Math.random() * color.length)];
+
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
+//console.log(analyseColor(randomColor))
 
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
+function analyseColor(color){
+	switch (color){
+		case "red":
+			alert("Blood is red");
+			break;
+		case "green":
+			alert("Grass is green");
+			break;
+		case "yellow":
+			alert("the sun is yellow");
+			break;
+		case "blue":
+			alert("the sky is blue");
+			break;
+		case"orange":
+			alert("oranges are orange");
+			break;
+		case "violet":
+			alert("my favorite shirt is violet");
+			break;
+		case "indigo":
+			alert("idk how indigo looks like");
+			break;
+		default:
+			alert("I don't know that color")
+	}
+}
+
+console.log(analyseColor(randomColor))
 
 /**
  * TODO:
@@ -56,6 +88,9 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+let whatColor = (prompt("Give me a color"))
+whatColor = analyseColor(whatColor)
+
 
 /* ########################################################################## */
 
