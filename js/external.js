@@ -53,3 +53,13 @@ let offerApplied = (items || premium) && !offer;
 
 alert("Can the offer be applied?" + offerApplied)
 
+//function name exercise
+let firstName = prompt("Whats your first name?")
+let lastName =prompt("Whats your last name?")
+
+function fullName(a, b){
+    let firstLast = (a, b)
+    return firstLast
+}
+
+console.log(fullName(firstName + lastName));
