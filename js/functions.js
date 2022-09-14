@@ -119,3 +119,6 @@ function applyDiscount(num, num2){
 	return num - (num * num2)
 }
 console.log(applyDiscount(45.99,0.12))
+
+
+//done
