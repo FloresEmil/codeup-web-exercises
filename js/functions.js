@@ -116,8 +116,6 @@ alert("$" + calculatedTip(billTotal, percentageTip));
  */
 
 function applyDiscount(num, num2){
-	let originalPrice = num
-	let DiscountPercent = num2
-
+	return num - (num * num2)
 }
-console.log(applyDiscount(45.99, 0.12))
+console.log(applyDiscount(45.99,0.12))
