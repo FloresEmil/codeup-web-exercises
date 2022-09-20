@@ -25,6 +25,7 @@
 	console.log(names[2])
 	console.log(names[3])
 
+	console.log("------------")
 	/**
 	 * TODO:
 	 * Write some code that uses a for loop to log every item in the names
@@ -33,6 +34,7 @@
 	for(let i = 0; i < names.length; i++){
 		console.log(names[i])
 	}
+	console.log("------------")
 
 	/**
 	 * TODO:
@@ -40,7 +42,7 @@
 	 */
 	names.forEach(names => console.log(names))
 
-
+	console.log("------------")
 	/**
 	 * TODO:
 	 * Create the following three functions, each will accept an array and
