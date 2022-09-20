@@ -19,5 +19,8 @@ for(let i = 0; i <= 50; i++){
 		console.log(`yikes skipping number ${userNumber}`);
 		continue
 	}
+	if (i % 2 !== 0){
+		console.log("odd number + i")
+	}
 	console.log(i)
 }

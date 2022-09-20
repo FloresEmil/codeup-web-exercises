@@ -79,8 +79,8 @@ function analyseColor(color){
 			alert("I don't know that color")
 	}
 }
+//	console.log(analyseColor(randomColor))
 
-console.log(analyseColor(randomColor))
 
 /**
  * TODO:

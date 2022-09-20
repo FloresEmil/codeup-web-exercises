@@ -58,8 +58,7 @@ let firstName = prompt("Whats your first name?")
 let lastName =prompt("Whats your last name?")
 
 function fullName(a, b){
-    let firstLast = (a, b)
-    return firstLast
+    return (a + b)
 }
 
 console.log(fullName(firstName + lastName));
