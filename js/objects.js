@@ -31,7 +31,7 @@
 	 * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
 	 */
 	name.sayHello = function (){
-		return console.log("Hello from " + name.first + " " + name.last)
+		return ("Hello from " + name.first + " " + name.last + "!")
 	}
 	console.log(name.sayHello())
 
@@ -50,12 +50,15 @@
 	 * and console.log the relevant messages for each person
 	 */
 
-	// var shoppers = [
-	//     {name: 'Cameron', amount: 180},
-	//     {name: 'Ryan', amount: 250},
-	//     {name: 'George', amount: 320}
-	// ];
+	 let shoppers = [
+	     {name: 'Cameron', amount: 180},
+	     {name: 'Ryan', amount: 250},
+	     {name: 'George', amount: 320}
+	 ];
 
+
+		
+		
 	/** TODO:
 	 * Create an array of objects that represent books and store it in a
 	 * variable named `books`. Each object should have a title and an author
@@ -68,6 +71,7 @@
 	 * > console.log(books[0].author.firstName) // "Douglas"
 	 * > console.log(books[0].author.lastName) // "Adams"
 	 */
+
 
 	/**
 	 * TODO:
