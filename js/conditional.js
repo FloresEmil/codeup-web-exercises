@@ -141,23 +141,11 @@ console.log(calculateTotal(3, 100))
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
- var luckyNumber = Math.floor(Math.random() * 6);
-var totalprice = parseFloat(prompt("Thank you for shopping at Wal-Mart! How much was your bill today?"));
-var discountprice = calculateTotal(luckyNumber, totalprice);
-
-if (luckyNumber == 0) {
-	alert("I'm sorry your lucky number was " + luckyNumber + " meaning you did not get a discount today! Your total is $" + totalprice);
-} else if (luckyNumber == 1) {
-	alert("Congratulations! Your lucky number was " + luckyNumber + " earning you a discount. Instead of paying $" + totalprice + " , I'm happy to say your discounted total today is $" + discountprice.toFixed(2));
-} else if (luckyNumber == 2) {
-	alert("Congratulations! Your lucky number was " + luckyNumber + " earning you a discount. Instead of paying $" + totalprice + " , I'm happy to say your discounted total today is $" + discountprice.toFixed(2));
-} else if (luckyNumber == 3) {
-	alert("Congratulations! Your lucky number was " + luckyNumber + " earning you a discount. Instead of paying $" + totalprice + " , I'm happy to say your discounted total today is $" + discountprice.toFixed(2));
-} else if (luckyNumber == 4) {
-	alert("Congratulations! Your lucky number was " + luckyNumber + " earning you a discount. Instead of paying $" + totalprice + " , I'm happy to say your discounted total today is $" + discountprice.toFixed(2));
-} else if (luckyNumber == 5) {
-	alert("Congratulations! Your lucky number was " + luckyNumber + " earning you a discount. Instead of paying $" + totalprice + " , I'm happy to say your discounted total today is $" + discountprice.toFixed(2));
-}
+var luckyNumber = Math.floor(Math.random() * 6);
+let bill = Number(prompt("Please enter the amount of your bill."));
+alert("Your bill was: $" + bill.toFixed(2));
+alert("Your lucky number was: " + luckyNumber);
+alert("Your final charge is: $" + calculateTotal(luckyNumber ,bill));
 
 /**
  * TODO:
@@ -177,3 +165,21 @@ if (luckyNumber == 0) {
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+var ask= confirm("Would you like to enter a number?");
+if (ask==true) {
+	let askNum = prompt("Enter your number.");
+	if (askNum % 2 == 0) {
+		alert("The number is Even");
+	} else if (askNum % 2 !== 0) {
+		alert("The number is  Odd");
+	}
+	let askNum2=parseInt(askNum)+ parseInt(100);
+	alert("The number plus 100 is " + askNum2);
+	if (askNum2 > 0) {
+		alert("The number is postive.");
+	} else {
+		alert("The number is negative.");
+	}
+}else{
+	alert ("Operation cancelled.")
+}
