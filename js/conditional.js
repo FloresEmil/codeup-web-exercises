@@ -165,7 +165,7 @@ alert("Your final charge is: $" + calculateTotal(luckyNumber ,bill));
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-var ask= confirm("Would you like to enter a number?");
+let ask= confirm("Would you like to enter a number?");
 if (ask==true) {
 	let askNum = prompt("Enter your number.");
 	if (askNum % 2 == 0) {
