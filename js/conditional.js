@@ -114,6 +114,24 @@ whatColor = analyseColor(whatColor)
  * return value.
  */
 
+function calculateTotal (x , y) {
+	if (x == 0) {
+		return y;
+	} else if (x == 1) {
+		return y - (y * .10);
+	} else if (x == 2) {
+		return y - (y * .25);
+	} else if (x == 3) {
+		return y - (y * .35);
+	} else if (x == 4) {
+		return y / 2;
+	} else {
+		return y - y;
+	}
+}
+
+console.log(calculateTotal(4,100))
+console.log(calculateTotal(3, 100))
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -123,7 +141,23 @@ whatColor = analyseColor(whatColor)
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+ var luckyNumber = Math.floor(Math.random() * 6);
+var totalprice = parseFloat(prompt("Thank you for shopping at Wal-Mart! How much was your bill today?"));
+var discountprice = calculateTotal(luckyNumber, totalprice);
+
+if (luckyNumber == 0) {
+	alert("I'm sorry your lucky number was " + luckyNumber + " meaning you did not get a discount today! Your total is $" + totalprice);
+} else if (luckyNumber == 1) {
+	alert("Congratulations! Your lucky number was " + luckyNumber + " earning you a discount. Instead of paying $" + totalprice + " , I'm happy to say your discounted total today is $" + discountprice.toFixed(2));
+} else if (luckyNumber == 2) {
+	alert("Congratulations! Your lucky number was " + luckyNumber + " earning you a discount. Instead of paying $" + totalprice + " , I'm happy to say your discounted total today is $" + discountprice.toFixed(2));
+} else if (luckyNumber == 3) {
+	alert("Congratulations! Your lucky number was " + luckyNumber + " earning you a discount. Instead of paying $" + totalprice + " , I'm happy to say your discounted total today is $" + discountprice.toFixed(2));
+} else if (luckyNumber == 4) {
+	alert("Congratulations! Your lucky number was " + luckyNumber + " earning you a discount. Instead of paying $" + totalprice + " , I'm happy to say your discounted total today is $" + discountprice.toFixed(2));
+} else if (luckyNumber == 5) {
+	alert("Congratulations! Your lucky number was " + luckyNumber + " earning you a discount. Instead of paying $" + totalprice + " , I'm happy to say your discounted total today is $" + discountprice.toFixed(2));
+}
 
 /**
  * TODO:
