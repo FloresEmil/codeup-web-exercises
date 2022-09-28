@@ -1,4 +1,40 @@
 h1 {
-    color: purple; /* single line comment */
+    text-align: center;
+}
+
+h1, h2  {
+    color: darkolivegreen;
     text-decoration: underline;
+}
+
+body {
+    background-image: url("https://wallpapercave.com/wp/wp4933162.jpg");
+    background-color: beige;
+    background-size: contain;
+    font-family: AppleMyungjo, emoji;
+}
+
+ul, ol {
+    list-style-type: square;
+}
+
+td, tr {
+    padding: 10px;
+    font-size: 20px;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: deepskyblue;
+}
+
+.center1, {
+   float: left;
+}
+
+.center2 {
+    float: right;
 }
