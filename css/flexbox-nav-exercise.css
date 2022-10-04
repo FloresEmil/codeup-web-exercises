@@ -2,11 +2,17 @@
     box-sizing: border-box;
 }
 
-.navBox{
+body{
+    background-color: black;
+}
+
+.navBox {
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #d0cace;
+    border-radius: 25px;
+
 
 }
 
@@ -30,3 +36,48 @@ a {
 a:hover{
     color: blue;
 }
+
+.footerNavBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    border-radius: 25px;
+
+
+}
+
+.logo2{
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+    padding: .2em;
+    font-size: 3em;
+    align-items: start;
+    color: white;
+
+}
+
+.foot{
+    color: white;
+}
+
+.material-symbols-outlined{
+    color: white;
+}
+
+span{
+    color: #b0a5a5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+}
+
+p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+
