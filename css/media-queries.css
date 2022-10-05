@@ -55,12 +55,14 @@
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 2560px){
+/*Desktop*/
+@media screen and (min-width: 766px) and (max-width: 2560px) {
 
     body {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 2vw;
 
     }
 
@@ -68,15 +70,22 @@
         display: none;
     }
 
-    h1 {
-        display: flex;
-        flex-direction: column;
+    .header-img {
+        height: 100%;
+        width: 100%;
     }
 
+    h1 {
+        display: flex;
+        flex-basis: 67%;
+    }
+
+    nav {
+        display: flex;
+        flex-basis: 30%;
+    }
     .nav-links {
         display: flex;
-        justify-content: flex-end;
-
     }
 
     ul {
@@ -88,4 +97,19 @@
         list-style-type: none;
     }
 
+    .main {
+        flex-basis: 40%;
+        margin-right: 100px;
+
+    }
+
+    .sub-section {
+        flex-basis: 40%;
+    }
+
+    footer {
+        margin-top: 200px;
+        flex-basis: 100%;
+
+    }
 }
