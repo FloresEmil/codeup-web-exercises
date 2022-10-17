@@ -100,12 +100,12 @@ body{
 }
 
 
-.navbar-dark {
-    background: green !important;
-    transition:  ;
-}
+/*.navbar-dark {*/
+/*    background: green !important;*/
+/*    transition:  ;*/
+/*}*/
 
-.navbar-dark.scrolled {
-    background: red !important;
-    transition: 1.5s ease-in;
-}
+/*.navbar-dark.scrolled {*/
+/*    background: red !important;*/
+/*    transition: 1.5s ease-in;*/
+/*}*/
