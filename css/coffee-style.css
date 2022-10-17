@@ -6,7 +6,6 @@ body{
 .navbar {
     background-color: #090707;
     border-bottom: white;
-
 }
 
 /*.jumbotron {*/
@@ -28,15 +27,16 @@ body{
     background-image: url("/img/home-7-video-img-1.jpg");
     background-size: cover;
     border-top: 1px solid #494848;;
-    height: 400px;
+    height: 500px;
     width: 100%;
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
     font-size: 70px;
     text-align: center;
+    text-shadow: 2px 2px #211d1d;
 }
 
-.bi {
+.small-icon {
     border: 2px solid #bd8e6d;
     border-radius: 50%;
     width: 50px;
@@ -72,9 +72,40 @@ body{
 
 .cafesito {
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     /*margin-top: 0em;*/
     font-size: xxx-large;
     font-family: 'Dancing Script', cursive;
 }
 
+
+.big-icon {
+    border: 7px solid #ffffff;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.the-btn {
+    color: white !important;
+}
+
+#coffees {
+
+
+}
+
+
+.navbar-dark {
+    background: green !important;
+    transition:  ;
+}
+
+.navbar-dark.scrolled {
+    background: red !important;
+    transition: 1.5s ease-in;
+}

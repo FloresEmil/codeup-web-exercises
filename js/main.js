@@ -31,6 +31,12 @@ function updateCoffees(e) {
 	tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
+
+//local storage accepts a string, so we used the following to convert
+// the user input objects as a string that can be stored locally.  The string is
+//then parsed to store it withing the array of coffees.
+
+
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
 	{id: 1, name: 'Light City', roast: 'light'},
@@ -49,6 +55,10 @@ var coffees = [
 	{id: 14, name: 'French', roast: 'dark'},
 ];
 
+
+//Sets the parsed item as to the coffeeList in order to display the addition on the page.
+
+
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
@@ -62,9 +72,9 @@ let userInput = document.getElementById("search")
 userInput.addEventListener('keyup', filterCoffees)
 
 function filterCoffees(e) {
-	e.preventDefault(); // don't submit the form, we just want to update the data
+	e.preventDefault();
 	var result = userInput.value;
-	// var result = userInput.textContent = e.target.value;
+
 	console.log(result);
 
 	var filteredCoffees = [];
@@ -80,9 +90,7 @@ function filterCoffees(e) {
 
 
 
-
-
-
+//sticky navbar
 
 
 
