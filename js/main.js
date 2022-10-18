@@ -92,6 +92,3 @@ function filterCoffees(e) {
 
 //sticky navbar
 
-
-
-

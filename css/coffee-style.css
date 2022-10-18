@@ -94,18 +94,12 @@ body{
     color: white !important;
 }
 
-#coffees {
 
-
-}
-
-
-/*.navbar-dark {*/
-/*    background: green !important;*/
-/*    transition:  ;*/
+/*body{min-height:200vh;}*/
+/*.navbar-default{*/
+/*    transition:500ms ease;*/
+/*    background: black:*/
 /*}*/
-
-/*.navbar-dark.scrolled {*/
-/*    background: red !important;*/
-/*    transition: 1.5s ease-in;*/
+/*.navbar-default.scrolled{*/
+/*    background:#000;*/
 /*}*/
