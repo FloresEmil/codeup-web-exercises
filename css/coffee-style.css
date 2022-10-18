@@ -1,3 +1,7 @@
+/**{*/
+/*    border: red 1px solid;*/
+/*}*/
+
 body{
     background-color: #090707 !important;
     color: white !important ;
@@ -8,27 +12,12 @@ body{
     border-bottom: white;
 }
 
-/*.jumbotron {*/
-/*    background-image: url("/img/home-7-video-img-1.jpg");*/
-/*    height: 400px;*/
-/*    width: 100%;*/
-/*    background-size: cover;*/
-/*}*/
 
-/*.title {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    padding-top: 20em;*/
-/*}*/
-
-
-
-.maintxt {
+.jumbotron {
     background-image: url("/img/home-7-video-img-1.jpg");
     background-size: cover;
     border-top: 1px solid #494848;;
     height: 500px;
-    width: 100%;
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
     font-size: 70px;
@@ -94,6 +83,28 @@ body{
     color: white !important;
 }
 
+
+#coffees {
+    display:flex;
+    flex-wrap: wrap;
+    width: 50%;
+justify-content: space-between;
+}
+
+.search-thing {
+    float: right;
+
+}
+
+p {
+    color: #bd8e6d;
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    background-color:#bd8e6d ;
+}
 
 /*body{min-height:200vh;}*/
 /*.navbar-default{*/
