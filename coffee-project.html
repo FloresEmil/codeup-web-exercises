@@ -51,6 +51,7 @@
 </nav>
 
 
+
 <!--JUMBOTRON-->
 <div class="container">
 	<div class="jumbotron">
@@ -71,241 +72,244 @@
 					</button>
 				</div>
 
+			</div>
 		</div>
 	</div>
-	</div>
-<!--SECOND TITLE WITH LINES-->
-<div class="theline">
-	<div class="line-1 mx-auto"></div>
-	<p CLASS="cafesito">Cafesito</p>
-	<div class="line-2 mx-auto"></div>
-</div>
-
-
-<!--SEARCH COFFEE FUN.-->
-<div class="container">
-
-	<br>
-
-	<div class="col-5 order-2 row search-thing">
-		<form class="inputs">
-			<div class="container">
-				<!--	search selections start-->
-				<h2>search selection</h2>
-				<label for="roast-selection">Roast</label>
-				<br>
-				<select class="form-select" aria-label="Default select example" id="roast-selection">
-					<option>all</option>
-					<option>light</option>
-					<option>medium</option>
-					<option>dark</option>
-				</select>
-				<br>
-<!--				<label for="coffeeSearch">Coffee Name</label>-->
-				<input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="text" id="coffeeSearch">
-				<!--	search selections end-->
-
-			</div>
-			<div class="container">
-				<!--Add favorites start	-->
-				<br>
-				<h2>Add your favorites</h2>
-				<label for="suggestion-roast">Roast</label>
-				<br>
-				<select class="form-select" aria-label="Default select example" id="suggestion-roast">
-					<option>light</option>
-					<option>medium</option>
-					<option>dark</option>
-				</select>
-				<br>
-<!--				<label for="suggestion-name">Bean</label>-->
-
-				<input  class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="text" id="suggestion-name">
-
-				<input class="btn btn-outline-dark my-2 my-sm-0" style="color: #bd8e6d" id="button" type="button" value="submit" onClick="window.location.reload()">
-				<!--Add favorites end	-->
-			</div>
-		</form>
+	<!--SECOND TITLE WITH LINES-->
+	<div class="theline">
+		<div class="line-1 mx-auto"></div>
+		<p CLASS="cafesito">Cafesito</p>
+		<div class="line-2 mx-auto"></div>
 	</div>
 
-<!--COFFEES-->
-	<section id="coffees">
-	</section>
 
-</div>
+	<!--SEARCH COFFEE FUN.-->
+	<div class="container">
+
+		<br>
+
+		<div class="col-5 order-2 row search-thing">
+			<form class="inputs">
+				<div class="container">
+					<!--	search selections start-->
+					<h2>search selection</h2>
+					<label for="roast-selection">Roast</label>
+					<br>
+					<select class="form-select" aria-label="Default select example" id="roast-selection">
+						<option>all</option>
+						<option>light</option>
+						<option>medium</option>
+						<option>dark</option>
+					</select>
+					<br>
+					<!--				<label for="coffeeSearch">Coffee Name</label>-->
+					<input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="text"
+					       id="coffeeSearch">
+					<!--	search selections end-->
+
+				</div>
+				<div class="container">
+					<!--Add favorites start	-->
+					<br>
+					<h2>Add your favorites</h2>
+					<label for="suggestion-roast">Roast</label>
+					<br>
+					<select class="form-select" aria-label="Default select example" id="suggestion-roast">
+						<option>light</option>
+						<option>medium</option>
+						<option>dark</option>
+					</select>
+					<br>
+					<!--				<label for="suggestion-name">Bean</label>-->
+
+					<input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="text"
+					       id="suggestion-name">
+
+					<input class="btn btn-outline-dark my-2 my-sm-0" style="color: #bd8e6d" id="button" type="button"
+					       value="submit" onClick="window.location.reload()">
+					<!--Add favorites end	-->
+				</div>
+			</form>
+		</div>
+
+		<!--COFFEES-->
+		<section id="coffees">
+		</section>
+
+	</div>
 
 	<br>
 	<hr style="background-color: #bd8e6d">
 
-<!--CARDS-->
-<div class="container">
-	<div class="row row-cols-1 row-cols-md-3 g-4">
-	<div class="col" id="card1">
-		<div class="card h-100">
-			<img src="img/SeniorCoupleDrinkingCoffeeInside.jpg" class="card-img-top" alt="...">
-			<div class="card-body bg-black">
-				<h5 class="card-title">Old people</h5>
-				<p class="card-text">Pablo and Hinata enjoying coffee together</p>
+	<!--CARDS-->
+	<div class="container">
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+			<div class="col" id="card1">
+				<div class="card h-100">
+					<img src="img/SeniorCoupleDrinkingCoffeeInside.jpg" class="card-img-top" alt="...">
+					<div class="card-body bg-black">
+						<h5 class="card-title">Old people</h5>
+						<p class="card-text">Pablo and Hinata enjoying coffee together</p>
+					</div>
+					<div class="card-footer bg-dark">
+						<small class="text-muted">Last updated 5 mins ago</small>
+					</div>
+				</div>
 			</div>
-			<div class="card-footer bg-dark">
-				<small class="text-muted">Last updated 5 mins ago</small>
+			<div class="col">
+				<div class="card h-100">
+					<img src="img/CoffeeBeingPouredIntoCup.jpg" class="card-img-top" alt="...">
+					<div class="card-body bg-black">
+						<h5 class="card-title">Black Coffee</h5>
+						<p class="card-text ">Strong black coffee gets you hyped!</p>
+					</div>
+					<div class="card-footer bg-dark">
+						<small class="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+			</div>
+			<div class="col" id="card3">
+				<div class="card h-100">
+					<img src="img/download.jpeg" class="card-img-top" alt="...">
+					<div class="card-body bg-black">
+						<h5 class="card-title">Doggo</h5>
+						<p class="card-text">Too bad dogs can't drink coffee</p>
+					</div>
+					<div class="card-footer bg-dark">
+						<small class="text-muted">Last updated 10 mins ago</small>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="col">
-		<div class="card h-100">
-			<img src="img/CoffeeBeingPouredIntoCup.jpg" class="card-img-top" alt="...">
-			<div class="card-body bg-black">
-				<h5 class="card-title">Black Coffee</h5>
-				<p class="card-text ">Strong black coffee gets you hyped!</p>
+	<br>
+
+	<!-- Footer -->
+	<footer class="text-center text-lg-start bg-dark text-muted">
+		<!-- Section: Social media -->
+		<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+			<!-- Left -->
+			<div class="me-5 d-none d-lg-block">
+				<span>Get connected with us on social networks:</span>
 			</div>
-			<div class="card-footer bg-dark">
-				<small class="text-muted">Last updated 3 mins ago</small>
+			<!-- Left -->
+
+			<!-- Right -->
+			<div>
+				<a href="" class="me-4 text-reset">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="" class="me-4 text-reset">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a href="" class="me-4 text-reset">
+					<i class="fab fa-google"></i>
+				</a>
+				<a href="" class="me-4 text-reset">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="" class="me-4 text-reset">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a href="" class="me-4 text-reset">
+					<i class="fab fa-github"></i>
+				</a>
 			</div>
+			<!-- Right -->
+		</section>
+		<!-- Section: Social media -->
+
+		<!-- Section: Links  -->
+		<section class="">
+			<div class="container text-center text-md-start mt-5">
+				<!-- Grid row -->
+				<div class="row mt-3">
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+						<!-- Content -->
+						<h6 class="text-uppercase fw-bold mb-4">
+							<i class="fas fa-gem me-3"></i>Cafesito CO.
+						</h6>
+						<p>
+							I'm having a lot of fuuuuuuun with this. I am just writing stuff so it looks cool.
+						</p>
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<h6 class="text-uppercase fw-bold mb-4">
+							Products
+						</h6>
+						<p>
+							<a href="#!" class="text-reset">Coffee</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">Coffee</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">Coffee</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">More Coffee</a>
+						</p>
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<h6 class="text-uppercase fw-bold mb-4">
+							Useful links
+						</h6>
+						<p>
+							<a href="#!" class="text-reset">Pricing</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">Settings</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">Orders</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">Help</a>
+						</p>
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+						<!-- Links -->
+						<h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+						<p><i class="fas fa-home me-3"></i> Houston, TX, US</p>
+						<p>
+							<i class="fas fa-envelope me-3"></i>
+							cafesito@codeup.com
+						</p>
+						<p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+						<p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+					</div>
+					<!-- Grid column -->
+				</div>
+				<!-- Grid row -->
+			</div>
+		</section>
+		<!-- Section: Links  -->
+
+		<!-- Copyright -->
+		<div class="text-center p-4 bg-dark">
+			© 2022 Copyright:
+			<a class="text-reset fw-bold" href="https://mdbootstrap.com/">cafesito.com</a>
 		</div>
-	</div>
-	<div class="col" id="card3">
-		<div class="card h-100">
-			<img src="img/download.jpeg" class="card-img-top" alt="...">
-			<div class="card-body bg-black">
-				<h5 class="card-title">Doggo</h5>
-				<p class="card-text">Too bad dogs can't drink coffee</p>
-			</div>
-			<div class="card-footer bg-dark">
-				<small class="text-muted">Last updated 10 mins ago</small>
-			</div>
-		</div>
-	</div>
+		<!-- Copyright -->
+	</footer>
+	<!-- Footer -->
 </div>
-</div>
-<br>
 
-<!-- Footer -->
-<footer class="text-center text-lg-start bg-dark text-muted">
-	<!-- Section: Social media -->
-	<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-		<!-- Left -->
-		<div class="me-5 d-none d-lg-block">
-			<span>Get connected with us on social networks:</span>
-		</div>
-		<!-- Left -->
-
-		<!-- Right -->
-		<div>
-			<a href="" class="me-4 text-reset">
-				<i class="fab fa-facebook-f"></i>
-			</a>
-			<a href="" class="me-4 text-reset">
-				<i class="fab fa-twitter"></i>
-			</a>
-			<a href="" class="me-4 text-reset">
-				<i class="fab fa-google"></i>
-			</a>
-			<a href="" class="me-4 text-reset">
-				<i class="fab fa-instagram"></i>
-			</a>
-			<a href="" class="me-4 text-reset">
-				<i class="fab fa-linkedin"></i>
-			</a>
-			<a href="" class="me-4 text-reset">
-				<i class="fab fa-github"></i>
-			</a>
-		</div>
-		<!-- Right -->
-	</section>
-	<!-- Section: Social media -->
-
-	<!-- Section: Links  -->
-	<section class="">
-		<div class="container text-center text-md-start mt-5">
-			<!-- Grid row -->
-			<div class="row mt-3">
-				<!-- Grid column -->
-				<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-					<!-- Content -->
-					<h6 class="text-uppercase fw-bold mb-4">
-						<i class="fas fa-gem me-3"></i>Cafesito CO.
-					</h6>
-					<p>
-						I'm having a lot of fuuuuuuun with this. I am just writing stuff so it looks cool.
-					</p>
-				</div>
-				<!-- Grid column -->
-
-				<!-- Grid column -->
-				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-					<!-- Links -->
-					<h6 class="text-uppercase fw-bold mb-4">
-						Products
-					</h6>
-					<p>
-						<a href="#!" class="text-reset">Coffee</a>
-					</p>
-					<p>
-						<a href="#!" class="text-reset">Coffee</a>
-					</p>
-					<p>
-						<a href="#!" class="text-reset">Coffee</a>
-					</p>
-					<p>
-						<a href="#!" class="text-reset">More Coffee</a>
-					</p>
-				</div>
-				<!-- Grid column -->
-
-				<!-- Grid column -->
-				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-					<!-- Links -->
-					<h6 class="text-uppercase fw-bold mb-4">
-						Useful links
-					</h6>
-					<p>
-						<a href="#!" class="text-reset">Pricing</a>
-					</p>
-					<p>
-						<a href="#!" class="text-reset">Settings</a>
-					</p>
-					<p>
-						<a href="#!" class="text-reset">Orders</a>
-					</p>
-					<p>
-						<a href="#!" class="text-reset">Help</a>
-					</p>
-				</div>
-				<!-- Grid column -->
-
-				<!-- Grid column -->
-				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-					<!-- Links -->
-					<h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-					<p><i class="fas fa-home me-3"></i> Houston, TX, US</p>
-					<p>
-						<i class="fas fa-envelope me-3"></i>
-						cafesito@codeup.com
-					</p>
-					<p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-					<p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-				</div>
-				<!-- Grid column -->
-			</div>
-			<!-- Grid row -->
-		</div>
-	</section>
-	<!-- Section: Links  -->
-
-	<!-- Copyright -->
-	<div class="text-center p-4 bg-dark">
-		© 2022 Copyright:
-		<a class="text-reset fw-bold" href="https://mdbootstrap.com/">cafesito.com</a>
-	</div>
-	<!-- Copyright -->
-</footer>
-<!-- Footer -->
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+	        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+	        crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
