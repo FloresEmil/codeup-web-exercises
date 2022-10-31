@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mapbox Map</title>
+	<!-- Mapbox CSS -->
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+	<!-- Custom CSS -->
+	<style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 100%;
+            height: 700px;
+        }
+	</style>
+	<!--js-->
+	<script src="js/mapbox_map_api.js"></script>
+	<!--Keys.js-->
+	<script src="js/keys.js"></script>
+
+</head>
+
+<body>
+<h1>Mapbox maps</h1>
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+
+<!-- Mapbox JS -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+
+<!-- Custom JS -->
+<script>
+	// MapBox API token
+	mapboxgl.accessToken = mapboxToken;
+
+	// Starting position of Mapbox
+	var map = new mapboxgl.Map({
+		container: 'map', // container ID
+		style: 'mapbox://styles/mapbox/streets-v9', //mapbox styling
+		zoom: 9, // 0-24 starting zoom view
+		// center: [-95.32559436567875,29.726122002915442] //starting location position
+	});
+
+	const locations = [
+		{
+			name: 'Kabuki',
+			street: '2525 Gulf Fwy S',
+			city: 'League City, TX 77573',
+			phone: '+12813099676',
+			dish: 'sushi'
+
+		},
+		{
+			name: 'Flight Club Houston',
+			street: '3515 W Dallas St Suite 100',
+			city: 'Houston, TX 77019',
+			phone: '(713) 913-0044',
+			dish: ' burger and fries'
+		},
+		{
+			name: 'Taste of Texas Restaurant',
+			street: '10505 Katy Fwy',
+			city: 'Houston, TX 77024',
+			phone: '(713) 932-6901',
+			dish: 'steak'
+
+		}]
+	// assign starting point for first restaurant :
+	geocode(locations[0].street+locations[0].city, mapboxgl.accessToken).then(function(result) {
+		map.setCenter(result);
+		map.setZoom(8);
+	});
+	locations.forEach(function(restaurant){
+		geocode(restaurant.street+restaurant.city, mapboxgl.accessToken).then(function (result){
+			const eachMarker = new mapboxgl.Marker().setLngLat(result).addTo(map);
+			const eachPopup = new mapboxgl.Popup().setHTML(`<h2 style="text-align: center">${restaurant.name}</h2><h4>Address: ${restaurant.street}<br>${restaurant.city}<br>Phone: ${restaurant.phone}<br> Favorite dish: ${restaurant.dish}</h4>`);
+			eachMarker.setPopup(eachPopup)
+		})});
+
+</script>
+
+</body>
+</html>
