@@ -2,22 +2,52 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Weather Map</title>
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-	<!--CSS LINKED-->
+	<!-- css file-->
 	<link rel="stylesheet" href="css/weather_map.css">
+
+	<!-- Mapbox JS -->
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+
+	<!--js custom geocode-->
+	<script src="js/mapbox_map_api.js"></script>
+
+	<!--Keys.js-->
+	<script src="js/keys.js"></script>
 </head>
 <body>
+<div class="container-fluid">
+	<div class="row text-white" id="nav">
+		<div class="col-md-1 align-items-end">THE WEATHER MAP</div>
+		<div class="col-md-8" id="empy-spacer"></div>
+		<div class="col-md-2" id='city'></div>
+	</div>
+
+	<!--SEARCH BAR-->
+	<form class="ml-2 mb-4 mt-4 text-white">
+		<input type="text" class="form-control border-0" id="input" >
+		<button class="btn text-white d-none"  id="search-btn"></button>
+	</form>
+
+<!--CARDS-->
+	<div class="row justify-content-center justify-content-around" id="insert-card">
+	</div>
+
+	<!--MAP DIV-->
+	<div class="map mt-5" id='map'></div>
+</div>
 
 
-<!--JQUERY LINKED-->
+
+<!--jquery-->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
-<!--JS linked-->
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<!--custom js-->
 <script src="js/weather_map.js"></script>
-
-<!--API KEY-->
-<script src="js/keys.js"></script>
 </body>
 </html>
