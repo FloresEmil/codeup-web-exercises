@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Warn Ups</title>
+    <title>Example jQuery Page</title>
+    <style>
+        #foo {
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
+<h1 class="foo">Codeup Rocks!</h1>
 
-<script src="js/warmup_exercises.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    "use strict";
 
+    $(document).ready(function() {
+        $('.foo').css('background-color', 'blue');
+    });
 
+</script>
 </body>
 </html>
