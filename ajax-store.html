@@ -41,10 +41,21 @@
 
 
     // TODO: Take the data from inventory.json and append it to the products table
-$.get("data/inventory.json").done(function (){
-
-})
-
+    function render(){
+        $.get("/data/inventory.json").done(function(data){
+            for (let i=0;i<data.length; i++){
+                $("#insertProducts").append("<tr>");
+                $("#insertProducts").append('<td>' + data[i].title +"</td>");
+                $("#insertProducts").append('<td>' + data[i].quantity +"</td>");
+                // $("#insertProducts").append("<td>" + data[i].categories +"</td>");
+                $("#insertProducts").append('<td>'+ data[i].price +"</td>");
+                data[i].categories.forEach(function(i) {
+                    $("#insertProducts").append('<td>' + i + "</td>");
+                })
+                $("#insertProducts").append("</tr>");
+            }})};
+    $("#button").append('<button class="btn btn-success btn-lg mt-3 " >refresh</button>');
+    $("button").click(render());
 
 
 
